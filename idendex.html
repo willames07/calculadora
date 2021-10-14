@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> calculadora </title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>
+            calculadora
+        </h1>
+    </header>
+
+    <main>
+        <div class="top">
+            <hr>
+        </div>
+
+        <div class="corpo">
+            <div class="tela-mobile">
+
+            </div>
+            <div class="tela-calc">
+
+                <div class="tela-resp">
+                    <div class="camp-res">    
+                    <p id="operacao"></p>
+                    <p id="resultado"> 10 </p>
+                    </div>
+                </div>
+
+                <div class="buttons-calc">
+                    <button class="dif" onclick="limpar()">AC</button>
+                    <button class="dif" >()</button>
+                    <button class="dif" onclick="preencheCaixa('%')">%</button>
+                    <button class="dif" onclick="apUltimo()"><<</button>
+                    <button onclick="preencheCaixa('7')"> 7</button>
+                    <button onclick="preencheCaixa('8')">8</button>
+                    <button onclick="preencheCaixa('9')">9</button>
+                    <button class="dif" onclick="preencheCaixa('*')">x</button>
+                    <button onclick="preencheCaixa('4')">4</button>
+                    <button onclick="preencheCaixa('5')">5</button>
+                    <button onclick="preencheCaixa('6')" onclick="preencheCaixa(8)">6</button>
+                    <button class="dif" onclick="preencheCaixa('-')">-</button>
+                    <button onclick="preencheCaixa('1')">1</button>
+                    <button onclick="preencheCaixa('2')">2</button>
+                    <button onclick="preencheCaixa('3')">3</button>
+                    <button class="dif" onclick="preencheCaixa('+')" >+</button>
+                    <button onclick="preencheCaixa('.')">.</button>
+                    <button onclick="preencheCaixa(0)">0</button>
+                    <button class="dif" onclick="preencheCaixa('/')">/</button>
+                    <button class="igual">=</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="button">
+                
+            </div>
+        </div>
+    </main>
+
+    <script src="js/calc.js"></script>
+</body>
+</html>

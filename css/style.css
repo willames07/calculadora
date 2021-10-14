@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: blue;
+}
+
+header {
+    flex: 1;
+    letter-spacing: .1rem;
+    text-transform: capitalize;
+    padding: .5rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.816);
+}
+
+main {
+    flex: 5;
+    width: 240px;
+    height: 570px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px;
+    margin: .5rem auto 0 auto;
+    border: solid 3px #000;
+}
+
+.top {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+hr {
+    width: 30%;
+    height: 4px;
+    border-radius: 3px;
+}
+
+.corpo {
+    background-color: rgba(255, 255, 255, 0.946);
+    height: calc( 100% - 100px );
+    position: relative;
+}
+
+.bottom {
+    height: 50px;
+    background: #000;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    width: 70px;
+    height: 25px;
+    border-radius: 10px;
+    border: solid 2px #bbbbbbcd;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(49, 48, 48, 0.686);
+}
+
+/* TELA CALC */
+
+.tela-calc {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.tela-resp {
+    flex: 1;
+    background-color: #f3f3f3;
+    border-top: solid olivedrab 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+.camp-res {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    text-align: end;
+}
+#operacao {
+    margin-bottom: .5rem;
+    font-size: 1.1rem;
+    color: rgba(104, 104, 104, 0.474);
+}
+#resultado {
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.659);
+}
+
+.buttons-calc {
+    flex: 2;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    border-top: solid 2px #e3e3e39c;
+}
+
+button {
+    font-size: 1.3rem;
+    border: none;
+    font-weight: lighter;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #dadada;
+}
+
+.dif {
+    color: rgb(255, 166, 0);
+    font-size: 1rem;
+}
+
+.igual {
+    background-color: orange;
+    color: #fff;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    transition: .3s;
+}
+
+.igual:hover {
+    color: orange;
+    background-color: rgb(221, 221, 221);
+}
