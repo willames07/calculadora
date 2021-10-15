@@ -12,6 +12,7 @@ function preencheCaixa ( num ) {
 const limpar = ()=> {
 
     caixaOp.innerHTML= " "
+    telaRes.innerHTML= " "
 
 }
 
@@ -25,8 +26,9 @@ const apUltimo = ()=> {
 
 document.querySelector('.igual').addEventListener('click', ()=> {
 
-
-    caixaOp.innerHTML = eval(telaRes);
+    let opera = caixaOp.innerText
+    telaRes.innerHTML = eval(opera);
 
 
 })
+

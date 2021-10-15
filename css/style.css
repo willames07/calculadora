@@ -8,7 +8,7 @@
 body {
     height: 100vh;
     width: 100%;
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.727);
 }
 
 header {
@@ -22,7 +22,7 @@ header {
 
 main {
     flex: 5;
-    width: 240px;
+    width: 230px;
     height: 570px;
     background-color: rgb(0, 0, 0);
     border-radius: 25px;
@@ -84,7 +84,7 @@ hr {
 
 .tela-resp {
     flex: 1;
-    background-color: #f3f3f3;
+   
     border-top: solid olivedrab 7px;
     display: flex;
     flex-direction: column;
@@ -143,3 +143,121 @@ button:hover {
     color: orange;
     background-color: rgb(221, 221, 221);
 }
+
+#muda-tema {
+
+    width: 15px;
+    height: 8.7px;
+    overflow: hidden;
+    position: relative;
+    margin: .5rem;
+    display: flex;
+    justify-content: flex-start;
+    
+    border-radius: 4px;
+    border: solid 1px #000;
+    cursor: pointer;
+}
+
+
+/* TEMA */
+
+.show {
+
+    background-color: rgb(7, 21, 58);
+
+}
+
+.show main {
+
+    border-color: rgb(56, 56, 56);
+    border-radius: 30px;
+
+
+}
+
+.show .top {
+
+    background-color: rgb(56, 56, 56);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    z-index: 1;
+
+
+}
+
+.show .bottom {
+
+    background-color: rgb(56, 56, 56);
+
+}
+
+.show .tela-resp {
+
+    background-color: rgba(0, 0, 0, 0.803);
+    transition: .5s;
+
+}
+
+.show button {
+
+    background-color: rgba(119, 119, 119, 0.624);
+    color: rgba(255, 255, 255, 0.905);
+    transition: .5s;
+    letter-spacing: .1rem;
+
+}
+
+.show .dif {
+
+    color: aqua;
+    font-weight: lighter;
+    transition: .5s;
+
+}
+
+.show .buttons-calc {
+
+    flex: 2;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    border-top: solid 2px #5f5f5f5d;
+    background-color: rgba(119, 119, 119, 0.597);
+    transition: .5s;
+
+}
+
+.show .igual {
+
+    background-color: aqua; 
+    transition: .5s;
+
+}
+
+.show  #operacao {
+
+    color: rgba(255, 255, 255, 0.59);
+    transition: .5s;
+
+}
+
+.show #resposta {
+
+    color: rgba(255, 255, 255, 0.748);
+    transition: .5s;
+
+}
+
+.show #resultado {
+
+    color: rgba(255, 255, 255, 0.905);
+
+}
+
+.show #muda-tema  {
+
+    border-color: #fff;
+    background-color: rgb(29, 84, 165);
+    transition: .7s;
+}
+    

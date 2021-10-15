@@ -28,9 +28,14 @@
             <div class="tela-calc">
 
                 <div class="tela-resp">
+                    <div id="muda-tema"><!-- MUDAR TEMA -->
+
+
+                    </div><!-- FIM MUDAR TEMA -->
+
                     <div class="camp-res">    
                     <p id="operacao"></p>
-                    <p id="resultado"> 10 </p>
+                    <p id="resultado"></p>
                     </div>
                 </div>
 
@@ -46,7 +51,7 @@
                     <button onclick="preencheCaixa('4')">4</button>
                     <button onclick="preencheCaixa('5')">5</button>
                     <button onclick="preencheCaixa('6')" onclick="preencheCaixa(8)">6</button>
-                    <button class="dif" onclick="preencheCaixa('-')">-</button>
+                    <button class="dif" onclick="preencheCaixa('-')" style="font-weight: bolder;">-</button>
                     <button onclick="preencheCaixa('1')">1</button>
                     <button onclick="preencheCaixa('2')">2</button>
                     <button onclick="preencheCaixa('3')">3</button>
@@ -67,5 +72,6 @@
     </main>
 
     <script src="js/calc.js"></script>
+    <script src="js/tema.js"></script>
 </body>
 </html>
